@@ -2,6 +2,8 @@ import random
 import numpy as np
 import utils
 
+
+# Custom print
 def display(grid):
     if(np.shape(grid) != ((9,9))): return
 
@@ -33,6 +35,7 @@ def is_valid(grid, row, col, num):
     
     return True
 
+# recursive backtracking algorithm by inside code on youtube
 def fill_grid(grid):
     for i in range(9):
         for j in range(9):
@@ -53,6 +56,9 @@ def generate_sudoku():
     fill_grid(grid)
     return grid
 
+# Hides x amount of squares depending on difficulty
+# It its a bad solution in practice, as difficulty should be adapted
+# to how humans solve the problems :)
 def assign_difficulty(grid, difficulty):
     tiles_to_remove = 0
     match difficulty:
@@ -80,6 +86,8 @@ def assign_difficulty(grid, difficulty):
 
     return utils.subgrids_to_grid(subgrids)
 
+
+# Check if every row, column, and subgrid has every number 1-9
 def is_solved(grid):
     if np.shape(grid) != (9, 9): return False
 
