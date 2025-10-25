@@ -1,5 +1,5 @@
-# CLI Sudoku Generator
-CLI based sudoku game using python and numpy
+# CLI Sudoku 
+CLI based sudoku using python and numpy
 
 ```
 pip install numpy
