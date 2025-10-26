@@ -1,7 +1,7 @@
 import game
 import main
 
-commands = ["add", "remove", "help"]
+commands = ["add", "remove", "help", "retry"]
 
 def input(str, grid):
     str = str.lower()
