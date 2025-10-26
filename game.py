@@ -57,7 +57,7 @@ def generate_sudoku():
     return grid
 
 # Hides x amount of squares depending on difficulty
-# It its a bad solution in practice, as difficulty should be adapted
+# It is a bad solution in practice, as difficulty should be adapted
 # to how humans solve the problems :)
 def assign_difficulty(grid, difficulty):
     tiles_to_remove = 0
@@ -110,8 +110,7 @@ def is_solved(grid):
     return True
 
 def is_filled(grid):
-    if 0 in grid:
-        return False
+    return 0 not in grid
 
 def remove(grid, i, j):
     grid[i][j] = 0;
