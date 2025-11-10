@@ -20,7 +20,8 @@ def print_instructions():
     print("    add    <number> <row (1-9)> <col (1-9)>")
     print("    remove          <row (1-9)> <col (1-9)>")
     print("    retry")
-    print("    help\n")
+    print("    help")
+    print("    quit\n")
 
 def main():
     print("Hello, let's play a game of Sudoku.\n")
