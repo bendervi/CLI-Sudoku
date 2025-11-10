@@ -4,6 +4,9 @@ import main
 commands = ["add", "remove", "help", "retry"]
 
 def input(str, grid):
+    # Handle empty input
+    if not str:
+        return
     str = str.lower()
     params = str.split()
     command = params[0]
@@ -27,7 +30,7 @@ def input(str, grid):
         game.display(grid)
 
     if command == "help":
-        game.print_instructions()
+        main.print_instructions()
         print()
         game.display(grid)
 

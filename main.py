@@ -42,6 +42,7 @@ def main():
             print("Perhaps track back or retry? ")
             printed_warning = True
 
+        print(">>> ", end="")
         handler.input(input().lower(), grid)
 
     print("\nYou solved it, good job!!!")
